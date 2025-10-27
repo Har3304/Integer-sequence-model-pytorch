@@ -18,7 +18,7 @@ class SequenceModel(nn.Module):
         # self.w3 = nn.Parameter(torch.randn(1, device=device), requires_grad=True)
         self.b1 = nn.Parameter(torch.randn(1, device=device), requires_grad=True)
     def forward(self, x):
-        return ((x ** self.w1)) * self.w2 + self.b1
+        return (x ** self.w1) * self.w2 + self.b1
 
 
 
